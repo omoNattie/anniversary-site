@@ -1,0 +1,63 @@
+.side-menu {
+    position: absolute;
+
+    width: 0.7rem;
+    height: 9rem;
+
+    background-color: rgb(100, 100, 100);
+    opacity: 0.5;
+
+    border-radius: 10px;
+
+    left: 10px;
+    bottom: 0;
+    top: 0;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    transition: 0.3s ease-in-out;
+
+    z-index: 5;
+
+    cursor: pointer;
+}
+
+.side-menu:hover {
+    transform: translate(4px, 0px);
+
+    opacity: 1;
+}
+
+.side-button {
+    width: 100%;
+}
+
+.menu {
+    position: absolute;
+    background-color: rgb(56, 56, 56);
+
+    left: 3.5rem;
+    bottom: 0;
+    top: 0;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    width: 20%;
+    height: 22rem;
+
+    z-index: 2;
+
+    visibility: hidden;
+    opacity: 0;
+
+    border-radius: 20px;
+
+    transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.menu-visible {
+    visibility: visible;
+    opacity: 1;
+}

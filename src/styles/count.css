@@ -1,0 +1,52 @@
+.count-wrap {
+    align-self: center;
+    margin-top: 10rem;
+    position: relative;
+
+    padding: 15px;
+
+    background-color: #32373d;
+
+    border-radius: 10px;
+
+    height: 12rem;
+    width: 20rem;
+
+    transition: 0.25s ease-out;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.count-wrap:hover {
+    scale: 1.08;
+
+    box-shadow: rgba(104, 104, 104, 0.35) 0px 5px 15px;
+}
+
+.outer-bar {
+    margin-top: 13px;
+    position: absolute;
+
+    width: 90%;
+    height: 1rem;
+
+    background-color: #464646;
+
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.inner-bar {
+    position: absolute;
+
+    width: 10%;
+    height: 1rem;
+
+    background-image: linear-gradient(to left, #1a992f, #39c551);
+
+    border-radius: 3px;
+}
+
+.day {
+    font-size: 6rem;
+}

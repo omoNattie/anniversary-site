@@ -1,0 +1,48 @@
+.card-center {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: absolute;
+    margin-top: 2rem;
+
+    width: 5.4rem;
+    height: 8rem;
+
+    border-radius: 1rem;
+
+    transition: 0.3s ease-in-out;
+}
+
+.margin {
+    margin-top: 1.2rem;
+}
+
+.card.one {
+    background-color: #FF8FB1;
+    rotate: -10deg;
+
+    z-index: 3;
+}
+
+.wrapper:hover .one {
+    transform: rotate(-10deg) translateX(-2rem);
+}
+
+.card.two {
+    background-color: #80489C;
+}
+
+.wrapper:hover .two {
+    transform: translateY(-1.5rem);
+}
+
+.card.three {
+    background-color: #432C7A;
+    rotate: 10deg;
+}
+
+.wrapper:hover .three {
+    transform: rotate(10deg) translateX(2rem);
+}

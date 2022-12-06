@@ -1,0 +1,23 @@
+.button-base {
+    padding: 11px;
+    border-radius: 50px;
+
+    transition: 0.4s ease-in-out;
+}
+
+.send {
+    background-image: linear-gradient(to right, #4287f5, #66a1ff);
+}
+
+.send:hover {
+    scale: 1.07;
+    box-shadow: rgba(112, 112, 112, 0.35) 0px 5px 15px;
+}
+
+.button-heart {
+    width: 1.7rem;
+}
+
+.test {
+    margin-top: 0.8rem;
+}
