@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "../styles/count.css"
 
-export default function Counter() {
+export default function Counter(): JSX.Element {
   const prog = document.getElementById('progress');
 
   const [result, setResult] = useState<number>(404);

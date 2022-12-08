@@ -10,10 +10,10 @@ import "./styles/buttons.css"
 
 function App() {
   const messages: string[] = [
-    "arisear",
-    "arseuar",
-    "aro,",
-    "ares",
+    "I love you~",
+    "You're the best~",
+    "You're the cutest~",
+    "You're the amazing person~",
   ];
   const [text, setText] = useState<string>("");
 
@@ -37,9 +37,10 @@ function App() {
           <Counter />
           <div className='flex-evenly'>
             <button className='button-base send' onClick={open}>
-              <img className="button-heart" src={Heart} alt="send-text" />
+              <p>Send!</p>
+              {/* <img className="button-heart" src={Heart} alt="send-text" /> */}
             </button>
-            <p className='test'>Mesage to be sent: {text}</p>
+            <p className='text-send'>Mesage to be sent: {text}</p>
           </div>
         </div>
       </main>

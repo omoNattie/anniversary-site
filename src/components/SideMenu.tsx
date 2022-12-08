@@ -2,11 +2,12 @@ import  { useEffect, useState } from 'react';
 
 import "../styles/sidemenu.css"
 import "../styles/cards.css"
+import SideMenuInner from './SideContent';
 
 const today: Date = new Date();
 const anniv: Date = new Date("November 18");
 
-export default function SideMenu() {
+export default function SideMenu(): JSX.Element  {
   const [active, setActive] = useState<boolean>(false);
   const [month, setMonth] = useState<number>(404);
   
@@ -19,29 +20,7 @@ export default function SideMenu() {
 
   return (
       <>
-        <div id="menu" className={active ? "menu" : "menu menu-visible"}>
-          <article>
-            <section>
-              <div>
-                <p id="month-count" className="text-center day">{month}</p>
-                <p className='text-center'>Months you've been dating for</p>
-              </div>
-            </section>
-            <section>
-              <div className='card-center wrapper'>
-                <div className='card one'>
-                  <p className='text-center margin'>I</p>
-                </div>
-                <div className='card two'>
-                  <p className='text-center margin'>Love</p>
-                </div>
-                <div className='card three'>
-                <p className='text-center margin'>You</p>
-                </div>
-              </div>
-            </section>
-          </article>
-        </div>  
+        <SideMenuInner active={active} month={month}/>
 
         <div className='flex side-menu'>
           <button className="side-button" onClick={ClickHandler}></button>
